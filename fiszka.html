@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Logowania - Generator Grafiki Online</title>
+    <link rel="stylesheet" href="fiszka.css">
+</head>
+<body>
+    <header>
+        <!-- Tytuł strony -->
+        <h1>Generator Grafiki Online</h1>
+
+        <!-- Ikonka menu rozwijanego w prawym górnym rogu -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Rozwijane menu -->
+        <nav id="dropdown-menu" class="dropdown-menu">
+            <a href="index.html">Strona Główna</a>
+            <a href="about.html">O Nas</a>
+            <a href="features.html">Funkcje</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="support.html">Wsparcie</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Panel logowania -->
+        <div class="login-container">
+            <h2>Bezpieczne Logowanie</h2>
+            <p class="subtext">Zaloguj się, aby rozpocząć generowanie grafik</p>
+            <form action="dashboard.html" method="POST">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Zaloguj się</button>
+            </form>
+            <p class="forgot-password"><a href="forgot-password.html">Zapomniałeś hasła?</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Generator Grafiki Online. Wszelkie prawa zastrzeżone.</p>
+            <nav>
+                <a href="terms.html">Regulamin</a>
+                <a href="privacy.html">Polityka Prywatności</a>
+                <a href="cookies.html">Polityka Cookies</a>
+            </nav>
+        </div>
+    </footer>
+	<!-- flaga{phishing_detected} -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("dropdown-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

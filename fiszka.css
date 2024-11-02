@@ -1,0 +1,174 @@
+/* Ustawienia dla całego ciała strony */
+body {
+    background-image: url('tlo22.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Nagłówek */
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+/* Tytuł strony */
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+	padding: 0;
+}
+
+/* Ikonka menu w prawym górnym rogu */
+.menu-icon {
+	position: relative; 
+    top: 0px;
+    left: 340px;
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Rozwijane menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: left;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Pokazywanie rozwijanego menu */
+.show {
+    display: block;
+}
+
+/* Główna część */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Kontener logowania */
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Stopka */
+footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    bottom: 0;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Pozostałe style */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
