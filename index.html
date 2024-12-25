@@ -126,6 +126,50 @@
         footer nav a:hover {
             text-decoration: underline;
         }
+
+        .login-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(240, 240, 255, 0.8), rgba(200, 200, 255, 0.8));
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -159,6 +203,17 @@
             <img src="city-icon.png" alt="Zabawa w mieście">
             <h3>Zabawa w Mieście</h3>
             <p>Znajdź najlepsze miasta do zwiedzania i poznaj ich kulturę.</p>
+        </div>
+    </section>
+
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Bezpieczne Logowanie</h2>
+            <form>
+                <input type="text" placeholder="Adres e-mail">
+                <input type="password" placeholder="Hasło">
+                <button type="submit">Zaloguj się</button>
+            </form>
         </div>
     </section>
 
